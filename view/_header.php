@@ -8,7 +8,7 @@
 	<meta name="description" content="Exercice d'initiation Git">
 	<meta name="author" content="Adrien Kühn">
 	<link href="favicon.png" rel="icon">
-	
+
 	<!-- Libs -->
 	<link rel="stylesheet" href="view/css/libs/bootstrap.min.css">
 	<link rel="stylesheet" href="view/css/libs/animate.css">
