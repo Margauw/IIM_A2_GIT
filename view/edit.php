@@ -9,13 +9,32 @@
 						<div class="row">
 							<div class="col-xs-10 col-sm-10 col-md-11 col-lg-11">
 								<b class="title"><?php echo $music['title']; ?></b>
-								<form action="#" method="POST">
+
+									
+									<?php
+								if(isset($error) && !empty($error)){
+									echo '
+									<div class="alert alert-danger alert-dismissable">
+										<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+										'.$error.'
+									</div>';
+								}
+								?>
+								<form action="edit.php" method="POST" enctype="multipart/form-data">
 									<div class="form-group">
 										<label for="title">Titre</label>
-										<input type="text" name="title" class="form-control" value="<?php echo $music['title']; ?>"/>
+										<input type="text" name="title" class="form-control">
 									</div>
-									<p class="clearfix"><button type="submit" class="valid pull-right"><i class="fa fa-check"></i> Valider</button></p>
+									<div class="form-group">
+										<label for="file">Musique</label>
+										<input type="file" name="music">
+										<p>
+											Extensions autorisées : .mp3, .ogg
+										</p>
+									</div>
+									<p class="clearfix"><button type="submit" class="valid pull-right"><i class="fa fa-check"></i>Envoyer</button></p>
 								</form>
+
 							</div>
 						</div>
 					</div>
