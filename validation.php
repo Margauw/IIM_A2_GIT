@@ -29,6 +29,7 @@ if(	isset($_POST['username']) && isset($_POST['email']) && isset($_POST['passwor
         "password" => $password,
         "email" => $email
     ));
+    header("Location:login.php");
 }
 	// TODO
 
