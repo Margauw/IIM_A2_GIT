@@ -3,8 +3,9 @@ session_start();
 require('config/config.php');
 require('model/functions.fn.php');
 
-if( isset($_FILES['music']) && !empty($_FILES['music']) && 
-	isset($_POST['title']) && !empty($_POST['title'])){
+if(isset($_FILES['music']) && !empty($_FILES['music']) 
+&& isset($_POST['title'])  && !empty($_POST['title']))
+{
 	
 	$file = $_FILES['music'];
 
@@ -16,13 +17,23 @@ if( isset($_FILES['music']) && !empty($_FILES['music']) &&
 			$destination = "musics/{$filename}.{$_SESSION['id']}.{$ext}";
 
 			// TODO
+			$user_id=$_SESSION['id'];
 
+			$addmusic = addMusic($db, $user_id, $_POST['title'], $destination);
+
+			move_uploaded_file($file['tmp_name'], $destination);
+			header('Location: dashboard.php');
 		} else {
 			$error = 'Erreur, le fichier n\'a pas une extension autorisée !';
 		}
 	// }
 }
-
+/*?>
+<prev>
+<?php var_dump($resultat); ?>
+<prev>
+<?php*/
 include 'view/_header.php';
 include 'view/add_music.php';
 include 'view/_footer.php';
+?>
