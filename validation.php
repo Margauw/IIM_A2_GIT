@@ -11,7 +11,7 @@ if(	isset($_POST['username']) && isset($_POST['email']) && isset($_POST['passwor
 
 
 
-	 $request = $db->prepare("SELECT id FROM members WHERE members LIKE :username OR email LIKE :email"); 
+	 $request = $db->prepare("SELECT id FROM users WHERE username LIKE :username OR email LIKE :email"); 
      $request->execute(
      	array(
      		"username" => $username,
@@ -22,7 +22,7 @@ if(	isset($_POST['username']) && isset($_POST['email']) && isset($_POST['passwor
 
   if (sizeof($members) == 0)
   {
-    $request = $db->prepare("INSERT INTO members (username, password, email, inscription_date, is_admin) VALUES (:username, :password, :email, NOW(), 0)"); 
+    $request = $db->prepare("INSERT INTO users (username, password, email, created_at) VALUES (:username, :password, :email, NOW())"); 
     $request->execute(
       array(
         "username" => $username,
