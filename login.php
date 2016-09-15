@@ -30,6 +30,6 @@ if(isset($_POST['email']) && isset($_POST['password'])){
 /******************************** 
 			VIEW 
 ********************************/
-include 'view/_header.php';
+include 'view/header.php';
 include 'view/login.php';
 include 'view/_footer.php';
