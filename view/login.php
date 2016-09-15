@@ -1,4 +1,4 @@
-<body style="background-color: #333;">
+<body>
 	<section id="login-container">
 		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 midway-horizontal midway-vertical fadeInDown animated">
 			<div id="logbox">

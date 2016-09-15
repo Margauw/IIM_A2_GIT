@@ -1,5 +1,9 @@
 body {
-	background-color: #E9E9E9;
+	background-image:url("../marshall.jpg");
+	background-repeat:no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 input:focus {
@@ -12,8 +16,11 @@ input:focus {
 
 #logbox {
 	padding: 40px;
-	background-color: #333;
+	background-color: rgba(41, 29, 44, 0.6);
+	border: 1px solid #aaa;
+	border-radius: 60px;
 	color: #fff;
+	: 0.5;
 }
 
 #logbox.register {
@@ -41,7 +48,7 @@ input:focus {
 	border: transparent;
 	padding: 10px 0 10px 40px;
 	background-color: rgba(255,255,255,.2);
-	color: white;
+	color: black;
 	font-size: 12px;
 	text-transform: uppercase;
 }
