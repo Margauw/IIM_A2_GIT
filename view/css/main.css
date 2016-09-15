@@ -210,11 +210,21 @@ p.account a {
 	letter-spacing: 1px;
 	border-bottom: 1px solid #CCC;
 }
-
+#musicfeed h3{
+	color:black;
+	font-size: 50px;
+	font-family: Georgia;
+}
+b.username{
+	color: black;
+}
+small.date.pull-right{
+	color:black;
+}
 .music,
 .block {
 	padding: 30px;
-	background-color: #fff;
+	background-color: rgba(190, 194, 192, 0.7);
 	margin-top: 20px;
 	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
