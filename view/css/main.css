@@ -155,7 +155,7 @@ p.account a {
 
 #topbar {
 	padding: 20px 0;
-	background-color: rgba(41, 29, 44, 0.4);
+	background-color: rgba(41, 29, 44, 0.9);
 }
 
 .logo {
@@ -181,11 +181,11 @@ p.account a {
 
 #topbar a.btn {
 	border: none;
-	background-color: rgba(190, 194, 192, 0.5);
-	border: solid 1px #F50;
+	background-color: );
+	border: solid 2px #E6E6FA;
 	float: right;
 	line-height: 25px;
-	color:black;
+	color:#E6E6FA;
 	text-transform: uppercase;
 	font-size: 11px;
 	font-weight: 700;
@@ -276,7 +276,7 @@ small.date.pull-right{
 }
 
 .music .actionicon a:hover{
-	color: #545251;
+	color: rgba(41, 29, 44, 0.9);
 }
 
 .block textarea {
