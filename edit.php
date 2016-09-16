@@ -13,6 +13,7 @@ $music = selectMusic($db, $music_id);
 
 if(isset($_POST) && !empty($_POST)){
 	if(!empty($_POST['title'])){
+
 		$edit = updateMusic($db, $_GET['id'], $_POST['title'], $_SESSION['id']);
 		if($edit == true){
 			header('Location: dashboard.php');

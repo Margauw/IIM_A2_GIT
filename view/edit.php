@@ -20,7 +20,7 @@
 									</div>';
 								}
 								?>
-								<form action="edit.php" method="POST" enctype="multipart/form-data">
+								<form action="edit.php?id=<?php echo $_GET["id"];?>" method="POST" enctype="multipart/form-data">
 									<div class="form-group">
 										<label for="title">Titre</label>
 										<input type="text" name="title" class="form-control">
