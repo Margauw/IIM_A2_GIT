@@ -10,14 +10,6 @@ input:focus {
   outline: none;
 }
 
-.fa-pencil {
-	color:black;
-}
-
-.fa-times {
-	color:black;
-}
-
 .mgtop20 {
 	margin-top: 20px;
 }
@@ -189,7 +181,7 @@ p.account a {
 
 #topbar a.btn {
 	border: none;
-	background-color: );
+	background-color: rgba(41, 29, 44, 0.9);
 	border: solid 2px #E6E6FA;
 	float: right;
 	line-height: 25px;
@@ -238,11 +230,11 @@ small.date.pull-right{
 	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-	border: solid 1px #fff;
+	border: solid 1px #000000;
 }
 
 .music:hover{
-	border: solid 1px #f50;
+	border: solid 1px #F0F8FF;
 }
 
 .music.playing {
