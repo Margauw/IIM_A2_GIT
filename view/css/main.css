@@ -10,6 +10,14 @@ input:focus {
   outline: none;
 }
 
+.fa-pencil {
+	color:black;
+}
+
+.fa-times {
+	color:black;
+}
+
 .mgtop20 {
 	margin-top: 20px;
 }
